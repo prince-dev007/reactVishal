@@ -1,19 +1,21 @@
 {
   "short_name": "React App",
-  "name": "Vishal Pipe",
+  "name": "Vishal Pipes",
   "icons": [
     {
-      "src": "logonew.ico",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "only.png",
-      "type": "image/png"
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
     },
     {
-      "src": "only.png",
-      "type": "image/png"
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",

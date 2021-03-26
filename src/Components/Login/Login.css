@@ -36,6 +36,21 @@
 @media only screen and (max-width: 768px) {
     #section1
     {
-        background: transparent;
+        background: url('../assests/img/mobile.png');
+        background-size: cover;
+        background-position: center;
+    }
+    #section1 .container
+    {
+        padding-top: 120px;
+    }
+    #section1 .img
+    {
+        border:0px solid #000;
+        text-align: right;
+    }
+    #section1 .img img
+    {
+        border: 0px solid #000;
     }
 }

@@ -24,7 +24,9 @@ function Login() {
           <div class="row">
             <div class="col-lg-6"></div>
             <div class="col-lg-6 mt-5 p-lg-5">
+              <div class="img">
               <img src={Logo} height="80px" alt="VishalPipe" />
+              </div>
               <form class="mt-4" id="loginForm" onSubmit={submitForm}>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>

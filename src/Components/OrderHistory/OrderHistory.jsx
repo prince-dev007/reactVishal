@@ -4,14 +4,18 @@ import $ from 'jquery';
 import { useHistory } from "react-router-dom";
 function OrderHistory() {
     let history = useHistory();
-    $('.tableTr').click(function() {
-       window.$('#staticBackdrop').modal('show');
+    $('#table').click(function() {
+       callModal();
     });
     function logoutTrans()
     {
         var check = window.confirm('Are you sure you want to logout');
         if(check)
         history.push("/");
+    }
+    function callModal()
+    {
+       $('#staticBackdrop1').modal('show');
     }
   return (
     <>
@@ -31,14 +35,14 @@ function OrderHistory() {
                 </tr>
               </thead>
               <tbody>
-                <tr class="tableTr">
+                <tr id="table">
                   <th scope="row">1</th>
                   <td>IS 1239</td>
                   <td>1000</td>
                   <td>10</td>
                   <td>12/12/2021</td>
                 </tr>
-                <tr class="tableTr">
+                <tr id="table">
                   <th scope="row">2</th>
                   <td>IS 1239</td>
                   <td>2000</td>
@@ -46,7 +50,7 @@ function OrderHistory() {
                   <td>12/12/2021</td>
                 
                 </tr>
-                <tr class="tableTr">
+                <tr id="table">
                   <th scope="row">3</th>
                   <td>IS 1239</td>
                   <td>3000</td>
@@ -54,7 +58,7 @@ function OrderHistory() {
                   <td>10/12/2021</td>
                 
                 </tr>
-                <tr class="tableTr">
+                <tr id="table">
                   <th scope="row">4</th>
                   <td>IS 1239</td>
                   <td>2700</td>
@@ -62,7 +66,7 @@ function OrderHistory() {
                   <td>08/12/2021</td>
                 
                 </tr>
-                <tr class="tableTr">
+                <tr id="table">
                   <th scope="row">5</th>
                   <td>IS 1239</td>
                   <td>2700</td>
@@ -70,7 +74,7 @@ function OrderHistory() {
                   <td>08/12/2021</td>
                 
                 </tr>
-                <tr class="tableTr">
+                <tr class="table">
                   <th scope="row">6</th>
                   <td>IS 1239</td>
                   <td>2700</td>
@@ -85,7 +89,7 @@ function OrderHistory() {
       <div class="container text-center mt-5" onClick={logoutTrans} id="logout">
       <button type="button" class="btn">Logout</button>
           </div>
-      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">

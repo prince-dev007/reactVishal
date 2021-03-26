@@ -27,7 +27,7 @@ function Header() {
                         <Link to="/NewOrder" class="nav-link" href="#Vishal">New Order<span class="sr-only">(current)</span></Link>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#Vishal">Outstanding<span class="sr-only">(current)</span></a>
+                        <Link to="/Outstanding" class="nav-link" href="#Vishal">Outstanding<span class="sr-only">(current)</span></Link>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#Vishal">Complaint<span class="sr-only">(current)</span></a>
@@ -39,7 +39,6 @@ function Header() {
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item"href="#Vishal" onClick={logout}>Logout</a>
-
                         </div>
                     </li>
                 </ul>

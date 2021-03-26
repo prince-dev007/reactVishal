@@ -11,6 +11,10 @@ function Dashboard(){
     {
         history.push("/OrderHistory");
     }
+    function Outstanding()
+    {
+        history.push("/Outstanding");
+    }
     function logoutTrans()
     {
         var check = window.confirm('Are you sure you want to logout');
@@ -47,12 +51,12 @@ function Dashboard(){
             </div>
             <div class="row mt-4">
                 <div class="col-lg-6 col-6">
-                    <div class="content rounded shadow d-flex align-items-center justify-content-center">
-                        <h1>Outstanding</h1>
+                <a href="#Vishal" id="newOrder" onClick={Outstanding}>  <div class="content rounded shadow d-flex align-items-center justify-content-center">
+                        <h1>Outstanding</h1> 
                         <div class="spinner-border text-danger ml-1" role="status">
                             <span class="sr-only">Loading...</span>
                           </div>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="col-lg-6 col-6">
                     <div class="content rounded shadow d-flex align-items-center justify-content-center">

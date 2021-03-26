@@ -2,12 +2,23 @@ import Header from '../Header/Header'
 import Tube from '../assests/img/Steel-Tubes-Pipes.jpeg';
 import Tubular from '../assests/img/Tubular-Steel.jpeg';
 import Polymers from '../assests/img/Polymers-Pipes.jpeg'
+import { useHistory } from "react-router-dom";
 import './order.css'
 function NewOrder(){
+    let history = useHistory();
+    function logoutTrans()
+    {
+        var check = window.confirm('Are you sure you want to logout');
+        if(check)
+        history.push("/");
+    }
     return(
         <>
             <Header/>
-            <div class="container-fluid mt-5" id="order1">
+            <div class="container text-right mt-3 " onClick={logoutTrans} id="logout">
+      <button type="button" class="btn">Logout</button>
+          </div>
+            <div class="container-fluid mt-3" id="order1">
         <div class="container">
             <h1>OUR <span>PRODUCTS RANGE</span></h1>
             <p class="mt-3">No wonder they are the soul of any constructions and industrial infrastructure! Think about aforesaid sectors; think of <span>VISHAL PIPES LTD.</span></p>
@@ -49,6 +60,7 @@ function NewOrder(){
             
         </div>
     </div>
+
         </>
     )
 }

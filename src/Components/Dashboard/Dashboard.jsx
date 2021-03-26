@@ -7,6 +7,16 @@ function Dashboard(){
     {
         history.push("/Neworder");
     }
+    function orderHistory()
+    {
+        history.push("/OrderHistory");
+    }
+    function logoutTrans()
+    {
+        var check = window.confirm('Are you sure you want to logout');
+        if(check)
+        history.push("/");
+    }
     return(
         
         <>
@@ -27,12 +37,12 @@ function Dashboard(){
                     </div></a>
                 </div>
                 <div class="col-lg-6 col-6">
-                    <div class="content rounded shadow d-flex align-items-center justify-content-center">
+                <a href="#Vishal" id="newOrder" onClick={orderHistory}>  <div class="content rounded shadow d-flex align-items-center justify-content-center">
                         <h1>Order History</h1> 
                         <div class="spinner-border text-danger ml-1" role="status">
                             <span class="sr-only">Loading...</span>
                           </div>
-                    </div>
+                    </div></a>
                 </div>
             </div>
             <div class="row mt-4">
@@ -55,6 +65,9 @@ function Dashboard(){
             </div>
         </div>
     </div>
+    <div class="container text-center mt-5" onClick={logoutTrans} id="logout">
+      <button type="button" class="btn">Logout</button>
+          </div>
         </>
     )
 }

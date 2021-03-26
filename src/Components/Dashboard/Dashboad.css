@@ -20,6 +20,10 @@
     height:200px;
     transition: 0.34s;
 }
+#logout
+{
+    display:none;
+}
 #section2 span
 {
     font-weight: bold;

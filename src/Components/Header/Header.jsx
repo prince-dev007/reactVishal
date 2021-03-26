@@ -1,5 +1,6 @@
 import Logo from '../assests/img/Vishal-Logo.jpg'
 import { useHistory } from "react-router-dom";
+import {Link} from 'react-router-dom';
 function Header() {
     let history = useHistory();
     function logout() {
@@ -17,9 +18,20 @@ function Header() {
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#Vishal">Home <span class="sr-only">(current)</span></a>
+                        <Link to="/Dashboard" class="nav-link" href="#Vishal">Dashboard<span class="sr-only">(current)</span></Link>
                     </li>
-
+                    <li class="nav-item active">
+                        <Link to="/OrderHistory" class="nav-link" href="#Vishal">Order History<span class="sr-only">(current)</span></Link>
+                    </li>
+                    <li class="nav-item active">
+                        <Link to="/NewOrder" class="nav-link" href="#Vishal">New Order<span class="sr-only">(current)</span></Link>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Vishal">Outstanding<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Vishal">Complaint<span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#Vishal" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

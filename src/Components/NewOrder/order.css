@@ -23,7 +23,10 @@
 {
     font-weight: bold;
 }
-
+#logout
+{
+    display:none;
+}
 @media only screen and (max-width: 768px) {
     #order1 .card
     {
@@ -33,4 +36,8 @@
     {
         font-size:1.8rem;
     }
+    #logout
+{
+    display:block;
+}
 }

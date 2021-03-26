@@ -30,7 +30,7 @@ function Header() {
                         <Link to="/Outstanding" class="nav-link" href="#Vishal">Outstanding<span class="sr-only">(current)</span></Link>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#Vishal">Complaint<span class="sr-only">(current)</span></a>
+                        <Link to="/Complaint" class="nav-link" href="#Vishal">Complaint<span class="sr-only">(current)</span></Link>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#Vishal" id="navbarDropdownMenuLink" role="button"

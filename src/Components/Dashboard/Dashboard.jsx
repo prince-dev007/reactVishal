@@ -21,6 +21,10 @@ function Dashboard(){
         if(check)
         history.push("/");
     }
+    function Complaint()
+    {
+        history.push("/Complaint");
+    }
     return(
         
         <>
@@ -59,12 +63,12 @@ function Dashboard(){
                     </div></a>
                 </div>
                 <div class="col-lg-6 col-6">
-                    <div class="content rounded shadow d-flex align-items-center justify-content-center">
-                        <h1>Complaint</h1>
+                <a href="#Vishal" id="newOrder" onClick={Complaint}>  <div class="content rounded shadow d-flex align-items-center justify-content-center">
+                        <h1>Complaint</h1> 
                         <div class="spinner-border text-danger ml-1" role="status">
                             <span class="sr-only">Loading...</span>
                           </div>
-                    </div>
+                    </div></a>
                 </div>
             </div>
         </div>

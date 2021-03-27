@@ -5,6 +5,7 @@ import NewOrder from './Components/NewOrder/NewOrder';
 import OrderHistory from './Components/OrderHistory/OrderHistory';
 import Outstanding from './Components/Outstanding/Outstanding';
 import Complaint from './Components/Complaint/Complaint';
+import ViewProducts from './Components/ViewProducts/ViewProducts';
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/OrderHistory" component={OrderHistory} />
         <Route exact path="/Outstanding" component={Outstanding}/>
         <Route exact path="/Complaint" component={Complaint}/>
+        <Route exact path="/ViewProducts" component={ViewProducts}/>
       </Switch>
     </>
   );
